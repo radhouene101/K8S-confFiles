@@ -15,7 +15,7 @@ spec:
       spec:
          containers:
             - name: bb-site
-              image: getting-started
+              image: angular-docker
               imagePullPolicy: Never
 ---
 apiVersion: v1
@@ -28,6 +28,6 @@ spec:
    selector:
       bb: web
    ports:
-      - port: 3000
+      - port: 4200
         targetPort: 3000
         nodePort: 30001
